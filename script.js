@@ -3,10 +3,13 @@ const minutes = document.querySelector(".minutes");
 const hours = document.querySelector(".hours");
 const days = document.querySelector(".days");
 
-let defSecs = 12;
-let defMins = 7;
-let defHours = 3;
-let defDays = 29;
+const date = new Date();
+console.log(date);
+
+let defSecs = 59-date.getSeconds();
+let defMins = 59-date.getMinutes();
+let defHours = 23-date.getHours();
+let defDays = 20+date.getDay();
 
 const timeFunction = setInterval(() => {
     defSecs--;
