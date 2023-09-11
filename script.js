@@ -9,7 +9,7 @@ console.log(date);
 let defSecs = 59-date.getSeconds();
 let defMins = 59-date.getMinutes();
 let defHours = 23-date.getHours();
-let defDays = 31-date.getDay();
+let defDays = 31-date.getDate();
 
 const timeFunction = setInterval(() => {
     defSecs--;
